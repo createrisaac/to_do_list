@@ -1,5 +1,4 @@
-nName of the task : homework
- Due date :25
- Status :pendingnName of the task : project
- Due date :20
- Status :accomplished
+
+Name of the task : nepal
+ Due date :3030
+ Status :completed
