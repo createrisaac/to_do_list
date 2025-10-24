@@ -11,6 +11,8 @@ struct assaignment
 };
 
 vector<assaignment> arr;
+
+
 void addtask(){
     assaignment task;
     cout<<"Name of the task : ";
@@ -36,7 +38,7 @@ void storeinfo(){
     ofstream file("to-do-list.txt");
 if(file.is_open()){
     for(int i=0;i<arr.size();i++){
-        file<< "nName of the task : " <<arr[i].name;
+        file<< "\nName of the task : " <<arr[i].name;
         file<<"\n Due date :" <<arr[i].date;
         file<<"\n Status :" <<arr[i].status;
     }
@@ -46,6 +48,22 @@ else{
 
 }
 file.close();
+}
+
+void loadtask(){
+    assaignment task;
+    ifstream file("to-do-list.txt");
+    if(file.is_open()){
+        while (file>>task.name>>task.date>>task.status)//extraction of three variables from the file
+        {
+            arr.push_back(task);
+        }
+        file.close();
+         cout << arr.size() ;
+    }
+    else{
+        cout<<"The file's not opened.";
+    }
 }
 
 int main()

@@ -1,3 +1,5 @@
-nName of the task : w
- Due date :3
- Status :r
+nName of the task : homework
+ Due date :25
+ Status :pendingnName of the task : project
+ Due date :20
+ Status :accomplished
